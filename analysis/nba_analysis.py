@@ -12,3 +12,9 @@ print(df.columns)
 # Show number of rows and columns
 print(df.shape)
 
+# See what types of games are in the dataset
+print(df["gameType"].value_counts())
+
+# See the range of dates
+print(df["gameDate"].min())
+print(df["gameDate"].max())
