@@ -116,19 +116,19 @@ The standardized coefficients showed that offensive and defensive effective fiel
 
 ### Offensive Shooting Efficiency vs. Winning Percentage
 
-![Offensive Shooting Efficiency vs. Winning Percentage](analysis/figures/off_efg_vs_win_pct.png)
+<img src="analysis/figures/off_efg_vs_win_pct.png" alt="Offensive Shooting Efficiency vs. Winning Percentage">
 
 ### Defensive Shooting Efficiency vs. Winning Percentage
 
-![Defensive Shooting Efficiency vs. Winning Percentage](analysis/figures/def_efg_vs_win_pct.png)
+<img src="analysis/figures/def_efg_vs_win_pct.png" alt="Defensive Shooting Efficiency vs. Winning Percentage">
 
 ### Season-by-Season Correlations
 
-![Season-by-Season Correlations](analysis/figures/season_correlations.png)
+<img src="analysis/figures/season_correlations.png" alt="Season-by-Season Correlations">
 
 ### Standardized Regression Coefficients
 
-![Standardized Regression Coefficients](analysis/figures/standardized_coefficients.png)
+<img src="analysis/figures/standardized_coefficients.png" alt="Standardized Regression Coefficients">
 
 ---
 
