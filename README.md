@@ -97,8 +97,9 @@ The final multiple regression model explained approximately **91.8% of the obser
 
 **R² = 0.918**
 
-The overall regression model was statistically significant.
-The standardized coefficients showed that offensive and defensive effective field goal percentage had the largest coefficient magnitudes among the predictors included in the model.
+The relatively high R² is reasonable given that the predictors are season-level team statistics that capture important aspects of basketball performance. However, this model measures **same-season associations** rather than predicting future team performance, so the results should not be interpreted as evidence that these statistics cause winning.
+
+The overall regression model was statistically significant. The standardized coefficients showed that offensive and defensive effective field goal percentage had the largest coefficient magnitudes among the predictors included in the model. Standardized coefficients represent each predictor's unique association with winning percentage after accounting for the other variables in the model, so their magnitudes can differ from the simple correlations reported above.
 
 ---
 
