@@ -19,6 +19,7 @@ print("\nCorrelations with Winning Percentage:")
 print(correlations)
 
 # Variables used in the regression model
+# We exlcuded W and L from variables because Win_Pct is used to calculate them. And NRtg also since it's derived from off/ def ratings.
 variables = [
     "Off_eFG_Pct",
     "Off_TOV_Pct",
