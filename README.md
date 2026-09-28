@@ -171,6 +171,12 @@ nba-team-stats-analysis/
 │   └── bref_team_stats_clean.csv
 │
 ├── analysis/
-│   └── nba_analysis.py
+│   ├── nba_analysis.py
+│   │
+│   └── models/
+│       ├── off_efg_vs_win_pct.png
+│       ├── def_efg_vs_win_pct.png
+│       ├── season_correlations.png
+│       └── standardized_coefficients.png
 │
 └── README.md
