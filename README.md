@@ -36,8 +36,7 @@ The main variables analyzed include:
 ### 1. Correlation Analysis
 
 I first calculated the correlation between each team statistic and winning percentage across all 300 team-seasons.
-
-This identifies which statistics have the strongest overall linear relationships with winning percentage.
+This helped me identify which statistics have the strongest overall linear relationships with winning percentage.
 
 ### 2. Multiple Linear Regression
 
@@ -55,20 +54,17 @@ The final model included:
 - 3PAr
 - Pace
 
-Win and loss totals were excluded because winning percentage is calculated directly from them.
-
-Net rating was also excluded from the final model because it is constructed from offensive and defensive rating, creating redundancy with other predictors.
+Win and loss totals were excluded because winning percentage is already calculated from them.
+Net rating was also excluded from the final model because it comes from offensive and defensive rating.
 
 ### 3. Standardized Regression Coefficients
 
-The predictors were standardized so their regression coefficients could be compared on the same scale.
-
-This helps identify which variables have the strongest **unique statistical associations** with winning percentage within the regression model.
+The predictors were standardized so the regression coefficients could be compared on the same scale.
+This helps identify which variables have the strongest unique statistical associations with winning percentage within the regression model.
 
 ### 4. Season-by-Season Analysis
 
-I also calculated the correlation between each statistic and winning percentage separately for each season.
-
+I calculated the correlation between each statistic and winning percentage separately for each season.
 This was used to examine whether the relationships observed across all 10 seasons were reasonably consistent from season to season.
 
 ---
@@ -86,17 +82,12 @@ The strongest and most consistent relationships with winning percentage were ass
 | DRB% | 0.292 | 0.371 | 0.025 |
 | Off_TOV% | -0.360 | -0.365 | -0.037 |
 
-Offensive effective field goal percentage had a strong positive relationship with winning percentage. Defensive effective field goal percentage had a strong negative relationship, meaning teams that allowed lower opponent shooting efficiency generally had higher winning percentages.
-
-These relationships were also relatively consistent across the 10 individual seasons.
+Offensive effective field goal percentage had a strong positive relationship with winning percentage. Defensive effective field goal percentage had a strong negative relationship which means teams that allowed lower opponent shooting efficiency usually had higher winning percentages. These relationships were also relatively consistent across the 10 individual seasons.
 
 ### Other Statistics
 
-Several other statistics showed weaker relationships with winning percentage.
-
-Three-point attempt rate had a relatively small standardized coefficient in the multiple regression model, and its coefficient was not statistically significant in the model.
-
-Pace also had a relatively small standardized coefficient compared with the shooting-efficiency variables.
+Several other statistics showed weaker relationships with winning percentage. Three-point attempt rate had a small positive correlation with winning percentage which suggests that teams that attempted more three-pointers tended to have somewhat higher winning percentages. But, its standardized coefficient in the multiple regression model was very small and not statistically significant which suggests that three-point attempt rate did not have a strong unique association with winning percentage after accounting for the other variables in the model.
+Pace also had a relatively small standardized coefficient compared with the shooting-efficiency variables, indicating a weaker association with winning percentage in the multiple regression model.
 
 ---
 
@@ -107,7 +98,6 @@ The final multiple regression model explained approximately **91.8% of the obser
 **R² = 0.918**
 
 The overall regression model was statistically significant.
-
 The standardized coefficients showed that offensive and defensive effective field goal percentage had the largest coefficient magnitudes among the predictors included in the model.
 
 ---
@@ -147,15 +137,14 @@ There are several limitations to this analysis.
 
 4. **Observational data.**  
    The analysis does not account for every factor that can influence team success, such as injuries, player availability, roster construction, coaching, or schedule strength.
+   For example, the 2019–20 season produced unusual defensive shooting-efficiency patterns compared with other seasons which may reflect the NBA bubble's different circumstances.
 
 ---
 
 ## Conclusion
 
 Across the 2016–17 through 2025–26 NBA seasons, offensive and defensive shooting efficiency showed the strongest and most consistent relationships with team winning percentage among the statistics examined.
-
 The multiple regression model also found substantial explanatory power, with an R² of 0.918. However, these results describe statistical associations rather than causal effects.
-
 This project demonstrates how correlation analysis, multiple linear regression, standardized coefficients, and season-by-season analysis can be used to investigate factors associated with sports performance.
 
 ---
