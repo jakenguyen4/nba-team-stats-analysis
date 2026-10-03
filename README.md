@@ -27,7 +27,7 @@ The main variables analyzed include:
 - Defensive rebound percentage (DRB%)
 - Free throw rate (FTr)
 - Three-point attempt rate (3PAr)
-- Pace
+- Pace 
 
 ---
 
@@ -40,7 +40,7 @@ This helped me identify which statistics have the strongest overall linear relat
 
 ### 2. Multiple Linear Regression
 
-I then used multiple linear regression to examine the relationship between the statistical factors and winning percentage while considering the predictors simultaneously.
+I then used multiple linear regression to examine the relationship between the statistical factors and winning percentage.
 
 The final model included:
 
@@ -52,10 +52,10 @@ The final model included:
 - Def_TOV%
 - DRB%
 - 3PAr
-- Pace
+- Pace (number of possessions a team has per 48 minutes)
 
-Win and loss totals were excluded because winning percentage is already calculated from them.
-Net rating was also excluded from the final model because it comes from offensive and defensive rating.
+Win and loss totals were excluded because winning percentage is already calculated directly from them so its redundant to include them.
+Net rating was also excluded from the final model because it's a combined measure of offensive/ defensive rating. It's a team measure which is not relevant since I'm trying to identify individual factors associated with winning.
 
 ### 3. Standardized Regression Coefficients
 
@@ -86,7 +86,7 @@ Offensive effective field goal percentage had a strong positive relationship wit
 
 ### Other Statistics
 
-Several other statistics showed weaker relationships with winning percentage. Three-point attempt rate had a small positive correlation with winning percentage which suggests that teams that attempted more three-pointers tended to have somewhat higher winning percentages. But, its standardized coefficient in the multiple regression model was very small and not statistically significant which suggests that three-point attempt rate did not have a strong unique association with winning percentage after accounting for the other variables in the model.
+Several other statistics showed weaker relationships with winning percentage. Three-point attempt rate had a small positive correlation with winning percentage which suggests that teams that attempted more three-pointers tended to have somewhat higher winning percentages. But its standardized coefficient in the multiple regression model was very small and not statistically significant which suggests that three-point attempt rate did not have a strong unique association with winning percentage when accounting for the other variables in the model.
 Pace also had a relatively small standardized coefficient compared with the shooting-efficiency variables, indicating a weaker association with winning percentage in the multiple regression model.
 
 ---
