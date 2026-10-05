@@ -17,7 +17,7 @@ The analysis uses NBA team-level advanced statistics from **Basketball-Reference
 - **Teams:** 30 NBA teams per season
 - **Response variable:** Winning percentage
 
-The main variables analyzed include:
+The main variables analyzed are:
 
 - Offensive effective field goal percentage (Off_eFG%)
 - Defensive effective field goal percentage (Def_eFG%)
@@ -29,13 +29,18 @@ The main variables analyzed include:
 - Three-point attempt rate (3PAr)
 - Pace 
 
+### Data Files
+
+- **`bref_team_stats_clean.csv`**: the cleaned Basketball-Reference team-season dataset used in all analyses above (one row per team per season).
+- **`Games.csv`**: a game-level dataset from [source] with one row per game, including game date, home and away teams, final scores, winner, game type (regular season or playoffs), arena, attendance, and officials. It was not used in the final analysis, which relies on season-level team statistics, and is included in the repository for reference.
+
 ---
 
 ## Methodology
 
 ### 1. Correlation Analysis
 
-I first calculated the correlation between each team statistic and winning percentage across all 300 team-seasons.
+I first calculated the correlation between every team statistic and winning percentage across all 300 team-seasons.
 This helped me identify which statistics have the strongest overall linear relationships with winning percentage.
 
 ### 2. Multiple Linear Regression
@@ -138,7 +143,7 @@ There are several limitations to this analysis.
 
 4. **Observational data.**  
    The analysis does not account for every factor that can influence team success, such as injuries, player availability, roster construction, coaching, or schedule strength.
-   For example, the 2019–20 season produced unusual defensive shooting-efficiency patterns compared with other seasons which may reflect the NBA bubble's different circumstances.
+   For example, the 2019–20 season was shortened and players' travel was restricted in a bubble. The defensive shooting-efficiency patterns looked different from other seasons. This analysis does not test the cause of that difference, and results may be sensitive to whether that season is included.
 
 ---
 
