@@ -4,7 +4,7 @@
 
 **What factors are most strongly associated with NBA team success?**
 
-This project analyzes NBA team statistics from the 10 most recent completed NBA seasons, 2016–17 through 2025–26 seasons, to examine which offensive, defensive, and team-style statistics have the strongest relationship with winning percentage.
+This project analyzes NBA team stats from the 10 most recent completed NBA seasons, 2016–17 to the 2025–26 seasons, to examine which offensive, defensive, and team-style statistics have the strongest relationship with winning percentage.
 
 ---
 
